@@ -237,7 +237,7 @@ class JoinClause
         }
 
         if ($query instanceof \Closure) {
-            $query = tap($this->query->newQuery(), $query);
+            $query = tp($this->query->newQuery(), $query);
         }
 
         if ($query instanceof BaseBuilder) {
